@@ -34,7 +34,7 @@ if __name__ == "__main__":
         driver.get(destination)
         driver.fullscreen_window()
         search_box = driver.find_element_by_name('q')
-        search_box.send_keys(host_ip)
+        search_box.send_keys("{}:{}/config".format(host_ip, PORT))
         app.run(host=host_ip, port=PORT)
     finally:
         driver.quit()

@@ -8,11 +8,9 @@ simple web-server for displaying a web page from a raspberry pi
 3. Install the flask library for python: `pip install flask`
 4. Add the following lines to make kiosk and unclutter run on startup: `sudo nano /etc/profile`
 ```
-unclutter &
 python /home/pi/kiosk/kiosk.py &
+unclutter &
 ```
 
 # Usage
-Reboot to start kiosk mode. Visit the page `[IP address]:[port]/config` to change what URL is being displayed.
-Kiosk will initially display the correct IP address after booting.
-Will run on port 4321 by default. Port may be configured as a constant in kiosk.py.
+Reboot to start kiosk mode. Kiosk will initially display the correct address to reconfigure what page is displayed.
